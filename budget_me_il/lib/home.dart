@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'add_item.dart';
+
 class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -21,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget page;
     switch (selectedIndex) {
       case 0:
-        page = SafeArea(child: Placeholder());
+        page = SafeArea(child: AddItem());
       case 1:
         page = SafeArea(child: Placeholder());
       case 2:
